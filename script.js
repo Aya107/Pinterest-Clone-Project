@@ -1,43 +1,43 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-// const grids = document.querySelectorAll('.grid');
-const headings = document.querySelectorAll('.offset .home_text')
-console.log(headings);
-function enterScreen(index){
-  // const grid = grids[index]; 
-  const heading = headings[index];
-  // const gridColumns = grid.querySelectorAll('.column');
+    const grids = document.querySelectorAll('.grid');
+    const headings = document.querySelectorAll('.offset .home_text')
 
-  // grid.classList.add('active');
+    function enterScreen(index){
+    const grid = grids[index]; 
+    const heading = headings[index];
+    const gridColumns = grid.querySelectorAll('.column');
 
-  // gridColumns.forEach( element => {
-  // element.classList.remove('animate-before', 'animate-after');
+    grid.classList.add('active');
 
-  // })
+    gridColumns.forEach( element => { element.classList.remove('animate-before', 'animate-after'); })
 
-  heading.classList.remove('animate-before', 'animate-after');
+    heading.classList.remove('animate-before', 'animate-after');
 }
 
 function exitScreen(index, exitDelay){
-  // const grid = grids[index]; 
-  const heading = headings[index];
-  // const gridColumns = grid.querySelectorAll('.column');
+    const grid = grids[index]; 
+    const heading = headings[index];
+    const gridColumns = grid.querySelectorAll('.column');
 
-  
-  // gridColumns.forEach( element => {
-  //   element.classList.add('animate-after');
+    
+    gridColumns.forEach( element => { element.classList.add('animate-after'); })
 
-  // })
-
-  heading.classList.add('animate-after');
-  
-  setTimeout(() => { grid.classList.remove('active'); }, exitDelay)
+    heading.classList.add('animate-after');
+    
+    setTimeout(() => { grid.classList.remove('active'); }, exitDelay)
 }
 
 function resetScreen(index) {
+    const grid = grids[index]; 
     const heading = headings[index];
+    const gridColumns = grid.querySelectorAll('.column');
+
     heading.classList.remove('animate-after');
     heading.classList.add('animate-before');
+
+    gridColumns.forEach( element => { element.classList.remove('animate-after'); })
+    gridColumns.forEach( element => { element.classList.add('animate-before'); })
 }
 
 function setupAnimationCycle({ timePerScreen, exitDelay }){
