@@ -89,80 +89,49 @@
     <main>
         <div class="container">
 
-
-<!--                                    --------can't scroll pages------------- -->
-
-
             <section id="top">
                 <div class="table-container">
                     <div class="table-cell">
-                        <div class="flex-container">
+                        <div class="fp-scrollable" style="height: 750px;">
                             <div style="height: calc(140px + 30vh); width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-end;">
                                 <div>
                                     <div data-test-id="home-main-title" style="margin: 2px; font-size: 60px; font-weight: 600; text-align: center; color: #111111;">Get your next</div>
                                 </div>
                                 <div data-test-id="home-ideas-text" style="height: 60px; width: 65%; display: flex; flex-direction: row; align-items: center; justify-content: center; margin-bottom: var(--space-800); margin-top: var(--space-400);">
-                                    <div style="font-size: 60px; font-weight: 400;">
-                                        <p class="unauth-homepage-use-case-food animate-before"
-                                            style="font-size: 60px; font-weight: 600; position: absolute; text-align: center; width: 100%; left: 0px; color: rgb(194, 139, 0); margin: 0px; transform: translateY(-39.8017px); opacity: 0.995043; z-index: 2;">
+                                    <div class="offset">
+                                        <p class="unauth-homepage-use-case-food home_text animate-before"
+                                            style="color: rgb(194, 139, 0);">
                                             weeknight dinner idea</p>
                                     </div>
-                                    <div style="font-size: 60px; font-weight: 400;">
-                                        <p class="unauth-homepage-use-case-homeDecor animate-before"
-                                            style="font-size: 60px; font-weight: 600; position: absolute; text-align: center; width: 100%; left: 0px; color: rgb(97, 140, 123); margin: 0px; transform: translateY(0px); opacity: 0; z-index: 0;">
+                                    <div class="offset">
+                                        <p class="unauth-homepage-use-case-homeDecor home_text animate-before"
+                                            style="color: rgb(97, 140, 123);">
                                             home decor idea</p>
                                     </div>
-                                    <div style="font-size: 60px; font-weight: 400;">
-                                        <p class="unauth-homepage-use-case-fashion animate-before"
-                                            style="font-size: 60px; font-weight: 600; position: absolute; text-align: center; width: 100%; left: 0px; color: rgb(0, 118, 211); margin: 0px; transform: translateY(0px); opacity: 0; z-index: 0;">
+                                    <div class="offset">
+                                        <p class="unauth-homepage-use-case-fashion home_text animate-before"
+                                            style="color: rgb(0, 118, 211);">
                                             new look outfit</p>
                                     </div>
-                                    <div style="font-size: 60px; font-weight: 400;">
-                                        <p class="unauth-homepage-use-case-gardening animate-before"
-                                            style="font-size: 60px; font-weight: 600; position: absolute; text-align: center; width: 100%; left: 0px; color: rgb(64, 122, 87); margin: 0px; transform: translateY(0px); opacity: 0; z-index: 0;">
+                                    <div class="offset">
+                                        <p class="unauth-homepage-use-case-gardening home_text animate-before"
+                                            style="color: rgb(64, 122, 87);">
                                             green thumb idea</p>
-                                    </div>
-                                </div>
-                                <div data-test-id="ideas-scroller" style="z-index: 1;">
-                                    <ul style="display: flex;">
-                                        <li style="list-style-type: none;">
-                                            <div aria-disabled="false" style="width: 100%; border-radius:50%;" role="button" tabindex="0">
-                                                <div aria-label="Idea 1" style="display: inline-block; background: rgb(194, 139, 0); padding: 5px; border-radius: 50px; margin: 6px; outline: none; border-style: none; height: 10px;">
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li style="list-style-type: none;">
-                                            <div aria-disabled="false" style="width: 100%; border-radius:50%;" role="button" tabindex="0">
-                                                <div aria-label="Idea 2" style="display: inline-block; background: rgb(225, 225, 225); padding: 5px; border-radius: 50px; margin: 6px; outline: none; border-style: none; height: 10px;">
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li style="list-style-type: none;">
-                                            <div aria-disabled="false" style="width: 100%; border-radius:50%;" role="button" tabindex="0">
-                                                <div aria-label="Idea 3" style="display: inline-block; background: rgb(225, 225, 225); padding: 5px; border-radius: 50px; margin: 6px; outline: none; border-style: none; height: 10px;">
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li style="list-style-type: none;">
-                                            <div aria-disabled="false" style="width: 100%; border-radius:50%;" role="button" tabindex="0">
-                                                <div aria-label="Idea 4" style="display: inline-block; background: rgb(225, 225, 225); padding: 5px; border-radius: 50px; margin: 6px; outline: none; border-style: none; height: 10px;">
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    </div>  
                                 </div>
                             </div>
+
                             <div style="position: absolute; height: 70vh; left: 0; right: 0; bottom: 0; overflow: hidden;">
                                 <div style="display: flex; flex-direction: column; align-items: center;">
                                     <div style="height: 100%; width: 1750px; position: relative; margin-top: 24px;">
                             
-                                        <div style="top: 20%; left: auto; right: auto; width: 1750px; display: flex; flex-direction: row; position: absolute;">
-                            
-                                            <div>
+                                        <div class="grid">
+                                        
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 0px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -173,8 +142,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
-                                                            <div aria-hidden="true" data-test-id="home-pin"
+                                                            style="transform: translateY(-40px); z-index: 0;">                                                            <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
                                                                     <img alt="" fetchpriority="auto" loading="auto" role="presentation"
@@ -184,7 +152,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -195,7 +163,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                        style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -206,7 +174,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                        style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -219,12 +187,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                            
-                                            <div>
+                                        
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 160px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px;  margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -235,7 +203,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -246,9 +214,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
-                                                            <div aria-hidden="true" data-test-id="home-pin"
-                                                                class="JME KO4 RDc ho- sLG wc1 zI7 iyn Hsu"
+                                                            style="transform: translateY(-40px); z-index: 0;">
+                                                            <div aria-hidden="true" data-test-id="home-pin" class="JME KO4 RDc ho- sLG wc1 zI7 iyn Hsu"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
                                                                     <img alt="" fetchpriority="auto" loading="auto" role="presentation"
@@ -258,7 +225,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -269,7 +236,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -282,12 +249,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                            
-                                            <div>
+                                        
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 240px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -298,7 +265,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -309,7 +276,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -320,7 +287,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -331,7 +298,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -344,12 +311,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                            
-                                            <div>
+                                        
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 400px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -360,7 +327,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -371,7 +338,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -382,7 +349,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -393,7 +360,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -406,12 +373,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                            
-                                            <div>
+                                        
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 240px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -422,7 +389,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -433,7 +400,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -444,7 +411,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -455,7 +422,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -468,12 +435,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                            
-                                            <div>
+                                        
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 160px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -484,7 +451,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -495,7 +462,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -506,7 +473,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -517,7 +484,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -530,12 +497,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                            
-                                            <div>
+                                        
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 0px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -546,7 +513,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -557,7 +524,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -568,7 +535,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -579,7 +546,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-food unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-80px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -592,15 +559,15 @@
                                                     </div>
                                                 </div>
                                             </div>
-                            
+                                        
                                         </div>
                             
-                                        <div style="top: 20%; left: auto; right: auto; width: 1750px; display: flex; flex-direction: row; position: absolute;">
-                                            <div>
+                                        <div class="grid">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 0px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -611,7 +578,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -622,7 +589,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -633,7 +600,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -644,7 +611,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -657,11 +624,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 160px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -672,7 +639,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -683,7 +650,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -694,7 +661,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -705,7 +672,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -718,11 +685,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 240px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -733,7 +700,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -744,7 +711,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -755,7 +722,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -766,7 +733,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -779,11 +746,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 400px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -794,7 +761,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -805,7 +772,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -816,7 +783,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -827,7 +794,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -840,11 +807,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 240px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -855,7 +822,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -866,7 +833,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -877,7 +844,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -888,7 +855,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -901,11 +868,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 160px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -916,7 +883,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -927,7 +894,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -938,7 +905,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -949,7 +916,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -962,11 +929,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 0px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -977,7 +944,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -988,7 +955,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -999,7 +966,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1010,7 +977,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-homeDecor unauth-hompeage-all-pins"
-                                                            style="transform: translateY(-40px); opacity: 1; z-index: 2;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1025,12 +992,12 @@
                                             </div>
                                         </div>
                             
-                                        <div style="top: 20%; left: auto; right: auto; width: 1750px; display: flex; flex-direction: row; position: absolute;">
-                                            <div class="xEW">
+                                        <div class="grid">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 0px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1041,7 +1008,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1052,7 +1019,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1063,7 +1030,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1074,7 +1041,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1087,11 +1054,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 160px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1102,7 +1069,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1113,7 +1080,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1124,7 +1091,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1135,7 +1102,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1148,11 +1115,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 240px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1163,7 +1130,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1174,7 +1141,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1185,7 +1152,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1196,7 +1163,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1209,11 +1176,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 400px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1224,7 +1191,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1235,7 +1202,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1246,7 +1213,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1257,7 +1224,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1270,11 +1237,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 240px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1285,7 +1252,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1296,7 +1263,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1307,7 +1274,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1318,7 +1285,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1331,11 +1298,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 160px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1346,7 +1313,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1357,7 +1324,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1368,7 +1335,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1379,7 +1346,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1392,11 +1359,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 0px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1407,7 +1374,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1418,7 +1385,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1429,7 +1396,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1440,7 +1407,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-fashion unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1455,12 +1422,12 @@
                                             </div>
                                         </div>
                             
-                                        <div style="top: 20%; left: auto; right: auto; width: 1750px; display: flex; flex-direction: row; position: absolute;">
-                                            <div class="xEW">
+                                        <div class="grid">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 0px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1471,7 +1438,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1482,7 +1449,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1493,7 +1460,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1504,7 +1471,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1517,11 +1484,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 160px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1532,7 +1499,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1543,7 +1510,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1554,7 +1521,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1565,7 +1532,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1578,11 +1545,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 240px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1593,7 +1560,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1604,7 +1571,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1615,7 +1582,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1626,7 +1593,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1639,11 +1606,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 400px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1654,7 +1621,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1665,7 +1632,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1676,7 +1643,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1687,7 +1654,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1700,11 +1667,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 240px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1715,7 +1682,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1726,7 +1693,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1737,7 +1704,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1748,7 +1715,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1761,11 +1728,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 160px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1776,7 +1743,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1787,7 +1754,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1798,7 +1765,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1809,7 +1776,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1822,11 +1789,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="xEW">
+                                            <div class="column animate-before">
                                                 <div role="presentation">
-                                                    <div data-test-id="home-pins-container" style="margin-top: 0px;">
+                                                    <div data-test-id="home-pins-container">
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1837,7 +1804,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1848,7 +1815,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1859,7 +1826,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1870,7 +1837,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="unauth-homepage-use-case-gardening unauth-hompeage-all-pins"
-                                                            style="transform: translateY(0px); opacity: 0; z-index: 0;">
+                                                            style="transform: translateY(-40px); z-index: 0;">
                                                             <div aria-hidden="true" data-test-id="home-pin"
                                                                 style="height: 350px; width: 236px; margin: 16px 8px; border-radius: 16px; overflow: hidden;">
                                                                 <div style="background-color: transparent; height: 100%; position: relative;">
@@ -1885,12 +1852,13 @@
                                             </div>
                                         </div>
                             
-                                        <div class="NVN CRJ zI7 iyn Hsu">Pinterest provides you with inspiration through a collage of images and
+                                        <!-- <div class="NVN CRJ zI7 iyn Hsu">Pinterest provides you with inspiration through a collage of images and
                                             videos from around the world to help bring your idea to life
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
+                            
                             <div style="position: absolute; left: 0; right: 0; bottom: 0; background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 70%); height: 200px;">
                                 <div style="position: absolute; left: 0; right: 0; bottom: 0;">
                                     <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
@@ -1927,10 +1895,6 @@
                     </div>
                 </div>
             </section>
-            
-            <!-- <section id="top">
-                <h2>top</h2>
-            </section> -->
 
             <section id="search">
                 <div class="table-container">
@@ -2250,8 +2214,6 @@
                     </div>
                 </div>
             </section>
-
-
 
             <section id="bottom">
                 <div class="table-container">
